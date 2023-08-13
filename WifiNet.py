@@ -58,7 +58,6 @@ f'netsh wlan connect name="{self.ssid}" SSID="{self.ssid}"',
 
 def encryption_type():
     while True:
-        print("Type 'back' to cancel")
         encryption = input('Encryption (WPA2 or WPA3) Enter 2 or 3: ')
         if encryption == "back":
             return
@@ -69,7 +68,6 @@ def encryption_type():
             
 def password_validation():
     while True:
-        print("Type 'back' to cancel")
         password = input('Password: ')
         if password == "back":
             return
